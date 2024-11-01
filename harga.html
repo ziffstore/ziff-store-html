@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziff Store</title>
+    <link rel="icon" href="ziffstore.jpg" type="image/jpeg"> <!-- Ganti 'path/to/logo.png' dengan jalur logo Anda -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Tambahkan gaya CSS jika diperlukan */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .main-container {
+            min-height: 225vh; /* Agar konten memenuhi tinggi viewport */
+            display: flex;
+            flex-direction: column; /* Susun konten secara kolom */
+        }
+
+        /* Konten Section */
+        .content-section {
+            padding: 40px;
+            margin: 10px 0; /* Margin antar section */
+            background-color: #f1f1f1; /* Gaya background */
+            border-radius: 8px; /* Sudut membulat */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan */
+        }
+
+        /* Kartu Harga */
+        .highlight {
+            margin: 20px 0;
+            background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih transparan */
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .highlight h4 {
+            margin-bottom: 10px;
+            color: #007bff; /* Warna biru untuk judul */
+        }
+
+        .highlight ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .highlight ul li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .highlight ul li:last-child {
+            border-bottom: none;
+        }
+
+        /* Tombol Beli */
+        .btn-beli {
+            background-color: #28a745;
+            color: #fff;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            margin-left: 10px; /* Jarak 10px antara teks dan tombol */
+        }
+
+        .btn-beli:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <!-- Container -->
+    <div class="main-container">
+        <!-- Header with Navigation Menu -->
+        <header>
+            <div id="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <h1>Ziff Store</h1>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="harga.html">Harga & Server</a></li>
+                    <li><a href="pembayaran.html">Pembayaran</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </nav>
+            <!-- Dark Mode Toggle Button -->
+            <button id="toggle-theme" aria-label="Toggle dark/light mode">🌙 Mode Gelap</button>
+        </header>
+
+            <section id="list-harga" class="content-section">
+                <h2>📝 Daftar Harga & Server :</h2>
+    
+                <h3>✅ SSH WS SSL Enhanced</h3>
+                <div class="highlight">
+                    <h4>Digital Ocean</h4>
+                    <ul>
+                        <li>
+                            <span>Trial (1 JAM) - Gratis</span>
+                            <a href="https://wa.me/6285179823364?text=Halo%20Admin,%20saya%20ingin%20mendapatkan%20Trial%20SSH%20WS%20SSL%20Enhanced%20selama%201%20JAM." target="_blank" class="btn-beli">Beli</a>
+                        </li>
+                        <li>
+                            <span>SG VVIP (15 HARI) - Rp 5.000</span>
+                            <a href="https://wa.me/6285179823364?text=Halo%20Admin,%20saya%20ingin%20membeli%20SG%20VVIP%2015%20HARI%20dengan%20harga%20Rp%205.000." target="_blank" class="btn-beli">Beli</a>
+                        </li>
+                        <li>
+                            <span>SG VVIP (20 HARI) - Rp 7.000</span>
+                            <a href="https://wa.me/6285179823364?text=Halo%20Admin,%20saya%20ingin%20membeli%20SG%20VVIP%2020%20HARI%20dengan%20harga%20Rp%207.000." target="_blank" class="btn-beli">Beli</a>
+                        </li>
+                        <li>
+                            <span>SG VVIP (30 HARI) - Rp 10.000</span>
+                            <a href="https://wa.me/6285179823364?text=Halo%20Admin,%20saya%20ingin%20membeli%20SG%20VVIP%2030%20HARI%20dengan%20harga%20Rp%2010.000." target="_blank" class="btn-beli">Beli</a>
+                        </li>
+                        <li>
+                            <span>SG VVIP (60 HARI) - Rp 20.000</span>
+                            <a href="https://wa.me/6285179823364?text=Halo%20Admin,%20saya%20ingin%20membeli%20SG%20VVIP%2060%20HARI%20dengan%20harga%20Rp%2020.000." target="_blank" class="btn-beli">Beli</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <h3>✅ VMESS WS & GRPC</h3>
+                <div class="highlight">
+                    <h4>Digital Ocean</h4>
+                    <ul>
+                        <li>
+                            <span>Trial (1 JAM) - Gratis</span>
+                            <a href="https://wa.me/6285179823364?text=Halo%20Admin,%20saya%20ingin%20mendapatkan%20Trial%20VMESS%20WS%20&%20GRPC%20selama%201%20JAM." target="_blank" class="btn-beli">Beli</a>
+                        </li>
+                        <li>
+                            <span>SG VVIP (15 HARI) - Rp 5.000</span>
+                            <a href="https://wa.me/6285179823364?text=Halo%20Admin,%20saya%20ingin%20membeli%20SG%20VVIP%2015%20HARI%20dengan%20harga%20Rp%205.000." target="_blank" class="btn-beli">Beli</a>
+                        </li>
+                        <li>
+                            <span>SG VVIP (20 HARI) - Rp 7.000</span>
+                            <a href="https://wa.me/6285179823364?text=Halo%20Admin,%20saya%20ingin%20membeli%20SG%20VVIP%2020%20HARI%20dengan%20harga%20Rp%207.000." target="_blank" class="btn-beli">Beli</a>
+                        </li>
+                        <li>
+                            <span>SG VVIP (30 HARI) - Rp 10.000</span>
+                            <a href="https://wa.me/6285179823364?text=Halo%20Admin,%20saya%20ingin%20membeli%20SG%20VVIP%2030%20HARI%20dengan%20harga%20Rp%2010.000." target="_blank" class="btn-beli">Beli</a>
+                        </li>
+                        <li>
+                            <span>SG VVIP (60 HARI) - Rp 20.000</span>
+                            <a href="https://wa.me/6285179823364?text=Halo%20Admin,%20saya%20ingin%20membeli%20SG%20VVIP%2060%20HARI%20dengan%20harga%20Rp%2020.000." target="_blank" class="btn-beli">Beli</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <h3>✅ VLESS WS & GRPC</h3>
+                <div class="highlight">
+                    <h4>Digital Ocean</h4>
+                    <ul>
+                        <li>
+                            <span>Trial (1 JAM) - Gratis</span>
+                            <a href="https://wa.me/6285179823364?text=Halo%20Admin,%20saya%20ingin%20mendapatkan%20Trial%20VLESS%20WS%20&%20GRPC%20selama%201%20JAM." target="_blank" class="btn-beli">Beli</a>
+                        </li>
+                        <li>
+                            <span>SG VVIP (15 HARI) - Rp 5.000</span>
+                            <a href="https://wa.me/6285179823364?text=Halo%20Admin,%20saya%20ingin%20membeli%20SG%20VVIP%2015%20HARI%20dengan%20harga%20Rp%205.000." target="_blank" class="btn-beli">Beli</a>
+                        </li>
+                        <li>
+                            <span>SG VVIP (20 HARI) - Rp 7.000</span>
+                            <a href="https://wa.me/6285179823364?text=Halo%20Admin,%20saya%20ingin%20membeli%20SG%20VVIP%2020%20HARI%20dengan%20harga%20Rp%207.000." target="_blank" class="btn-beli">Beli</a>
+                        </li>
+                        <li>
+                            <span>SG VVIP (30 HARI) - Rp 10.000</span>
+                            <a href="https://wa.me/6285179823364?text=Halo%20Admin,%20saya%20ingin%20membeli%20SG%20VVIP%2030%20HARI%20dengan%20harga%20Rp%2010.000." target="_blank" class="btn-beli">Beli</a>
+                        </li>
+                        <li>
+                            <span>SG VVIP (60 HARI) - Rp 20.000</span>
+                            <a href="https://wa.me/6285179823364?text=Halo%20Admin,%20saya%20ingin%20membeli%20SG%20VVIP%2060%20HARI%20dengan%20harga%20Rp%2020.000." target="_blank" class="btn-beli">Beli</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

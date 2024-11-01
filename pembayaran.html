@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran - Ziff Store</title>
+    <link rel="icon" href="ziffstore.jpg" type="ZIFF"> <!-- Ganti 'path/to/logo.png' dengan jalur logo Anda -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Tambahkan gaya CSS jika diperlukan */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Pastikan .main-container memiliki tinggi minimum agar bisa discroll */
+        .main-container {
+            min-height: 100vh; /* Agar konten memenuhi tinggi viewport */
+            display: flex;
+            flex-direction: column; /* Susun konten secara kolom */
+        }
+
+        /* Konten Section */
+        .content-section {
+            padding: 20px;
+            margin: 10px 0; /* Margin antar section */
+            background-color: #f1f1f1; /* Gaya background */
+            border-radius: 8px; /* Sudut membulat */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan */
+        }
+    </style>
+</head>
+<body>
+    <!-- Container -->
+    <div class="main-container">
+        <!-- Header with Navigation Menu -->
+       <header>
+        <div id="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <h1>Ziff Store</h1>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="harga.html">Harga & Server</a></li>
+                <li><a href="pembayaran.html">Pembayaran</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+        <!-- Dark Mode Toggle Button -->
+        <button id="toggle-theme" aria-label="Toggle dark/light mode">🌙 Mode Gelap</button>
+    </header>
+
+        <!-- Pembayaran Section -->
+        <section id="pembayaran" class="content-section">
+            <h2>💵 PEMBAYARAN VIA:</h2>
+            <ul>
+                <li>DANA</li>
+                <li>ShopeePay</li>
+                <li>OVO</li>
+                <li>GoPay</li>
+                <li>BRI</li>
+                <li>PULSA + 5K</li>
+                <li>QRIS ALL</li>
+            </ul>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p>© 2024 Ziff Store. Semua hak dilindungi.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

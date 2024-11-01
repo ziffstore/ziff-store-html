@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziff Store</title>
+    <link rel="icon" href="ziffstore.jpg" type="ZIFF"> <!-- Ganti 'path/to/logo.png' dengan jalur logo Anda -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Tambahkan gaya CSS jika diperlukan */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Pastikan .main-container memiliki tinggi minimum agar bisa discroll */
+        .main-container {
+            min-height: 225vh; /* Agar konten memenuhi tinggi viewport */
+            display: flex;
+            flex-direction: column; /* Susun konten secara kolom */
+        }
+
+        /* Konten Section */
+        .content-section {
+            padding: 20px;
+            margin: 10px 0; /* Margin antar section */
+            background-color: #f1f1f1; /* Gaya background */
+            border-radius: 8px; /* Sudut membulat */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan */
+        }
+    </style>
+</head>
+<body>
+    <!-- Container -->
+    <div class="main-container">
+        <!-- Header with Navigation Menu -->
+        <header>
+            <div id="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <h1>Ziff Store</h1>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="harga.html">Harga & Server</a></li>
+                    <li><a href="pembayaran.html">Pembayaran</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </nav>
+            <!-- Dark Mode Toggle Button -->
+            <button id="toggle-theme" aria-label="Toggle dark/light mode">🌙 Mode Gelap</button>
+        </header>
+
+        <!-- Kontak Section -->
+        <section class="content-section">
+            <h2>Harap Di Baca</h2>
+            <p>Ziff Store menjual akun VPN premium dengan server di Singapura. Tersedia berbagai macam protokol VPN seperti SSH, VMESS, VLESS, TROJAN, dan SSH UDP. Harga akun VPN bervariasi tergantung pada durasi dan jumlah IP yang diberikan.</p>
+        </section>
+
+        <!-- Main Content Section -->
+        <section id="home" class="content-section">
+            <h2>💉 𝗧𝗘𝗥𝗦𝗘𝗗𝗜𝗔 𝗣𝗥𝗢𝗧𝗢𝗞𝗢𝗟 💉</h2>
+            <ul>
+                <li>✅ SSH WS SSL Enhanced</li>
+                <li>✅ VMESS WS & GRPC</li>
+                <li>✅ VLESS WS & GRPC</li>
+                <li>✅ TROJAN WS & GRPC</li>
+                <li>✅ SSH UDP</li>
+            </ul>
+        </section>
+
+        <!-- Kontak Section -->
+        <section class="content-section">
+            <h2>⚙ PENGATURAN PEMBELI ⚙</h2>
+            <li>NO DDOS !!!</li>
+            <li>NO HACKING !!!</li>
+            <li>NO CARDING !!!</li>
+            <li>NO TORRENT !!!</li>
+            <li>NO SPAMMING !!!</li>
+            <li>NO PLAYING PLAYSTATION !!!</li>
+            <li>MAX 2 DEVICE !!!</li>
+            <li>MULTILOGIN AUTO BAN !!!</li>
+            </section>
+
+            <!-- Fitur Section -->
+        <section class="content-section">
+            <h2>🎮 Fitur Layanan 🎮</h2>
+            <ul>
+                <li>Nonton YouTube Lancar 4K ✓</li>
+                <li>Server Tidak Gampang Error ✓</li>
+                <li>Buat download fast speed ✓</li>
+                <li>ANTI RECONNECT ✓</li>
+                <li>Support Video Call (RIQUES CONFIG/udp 7200) ✓</li>
+                <li>Support GAME (TERGANTUNG TKP) ✓</li>
+                <li>Koneksi stabil ✓</li>
+                <li>Fast Connect ✓</li>
+                <li>Garansi 100% ✓</li>
+                <li>Bonus Config ✓</li>
+                <li>Bisa Buka Web di block ✓</li>
+                <li>DLL</li>
+            </ul>
+        </section>
+
+        <!-- Ready Config Section -->
+        <section class="content-section">
+            <h2>✅ READY CONFIG:</h2>
+            <ul>
+                <li>AXIS/XL EDU ALL TKP</li>
+                <li>AXIS/XL CONFRENCE ALL TKP</li>
+                <li>AXIS/XL GAME ALL TKP</li>
+                <li>TSEL ILPED & RUANGGURU</li>
+                <li>XL VIU</li>
+                <li>ISAT EDU</li>
+                <li>XL FLEX</li>
+                <li>XL VIDEO</li>
+                <li>XL VISION+</li>
+                <li>ALL BUG PROVIDER</li>
+            </ul>
+            <p>𝙙𝙞𝙨𝙖𝙧𝙖𝙣𝙠𝙖𝙣 𝙪𝙣𝙩𝙪𝙠 𝙢𝙚𝙣𝙘𝙤𝙗𝙖 𝙘𝙤𝙣𝙛𝙞𝙜/𝙩𝙧𝙞𝙖𝙡 𝙩𝙚𝙧𝙡𝙚𝙗𝙞𝙝 𝙙𝙪𝙡𝙪 𝙪𝙣𝙩𝙪𝙠 𝙩𝙚𝙨 𝙠𝙤𝙣𝙚𝙠𝙩𝙞𝙫𝙞𝙩𝙖𝙨𝙣𝙮𝙖😅</p>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p>© 2024 Ziff Store. Semua hak dilindungi.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
